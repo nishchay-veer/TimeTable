@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeTable - B1(CSE)</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    header::before{
+      content: "";
+      position: absolute;
+      background-color: black;
+      /* color: white; */
+      top:0;
+      left: 0;
+      width: 100vw;
+      height: 17vh;
+      z-index: -1;
+      opacity: 1;
+    }
+    .mr-5 hover:text-gray-900:hover {
+      cursor: pointer;
+    }
+
+    .TimeTable {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body {
+      background-color: #d1d0d0;
+    }
+
+    .btn {
+      background-color: #667eea;
+      color: white;
+      padding: 10px;
+      /* margin-bottom: 2px; */
+      margin: 2px;
+      /* border-radius: 25px; */
+      /* border: 1px solid black; */
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: #667eea;
+
+    }
+    #first:before{
+      content: "";
+      position: absolute;
+      background: url("https://wallpaper.dog/large/10812313.jpg") no-repeat center center/cover;
+      /* color: white; */
+      /* top:0;
+      left: 0; */
+      width: 100vw;
+      height: 158vh;
+      z-index: -1;
+      opacity: 1;
+    }
+    #second::before{
+      content: "";
+      position: absolute;
+      background: url("https://wallpaper.dog/large/10812313.jpg") no-repeat center center/cover;
+      /* color: white; */
+      /* top:0;
+      left: 0; */
+      width: 100vw;
+      height: 132vh;
+      z-index: -1;
+      opacity: 1;
+    }
+    footer{
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="user-select: auto;">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" style="user-select: auto;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full"
+          viewBox="0 0 24 24" style="user-select: auto;">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" style="user-select: auto;"></path>
+        </svg>
+        <span class="ml-3 text-xl" style="user-select: auto; color: white;">TimeTable B-1(CSE)</span>
+      </a>
+      <nav
+        class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center"
+        style="user-select: auto;">
+        <a class="mr-5 hover:text-gray-900" style="user-select: auto;color: white;">Home</a>
+        <a class="mr-5 hover:text-gray-900" style="user-select: auto; color: white;">About</a>
+        <a class="mr-5 hover:text-gray-900" style="user-select: auto;color: white;">Contact Us</a>
+
+      </nav>
+      <!-- <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" style="user-select: auto;">Button
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24" style="user-select: auto;">
+              <path d="M5 12h14M12 5l7 7-7 7" style="user-select: auto;"></path>
+            </svg>
+          </button> -->
+    </div>
+  </header>
+  <section id = "first"class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto" style="user-select: auto;">
+      <div class="flex flex-col text-center w-full mb-20" style="user-select: auto;">
+        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900" style="user-select: auto; color: black; background-color: pink;">OUR
+          SUBJECTS</h1>
+        <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="user-select: auto;">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> -->
+      </div>
+      <div class="flex flex-wrap -m-4" style="user-select: auto;">
+        <div class="p-4 lg:w-1/4 md:w-1/2" style="user-select: auto;">
+          <div class="h-full flex flex-col items-center text-center" style="user-select: auto;">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="https://source.unsplash.com/200x200/?physics"
+              style="user-select: auto; border: 2px solid yellow; box-shadow: 30px grey;">
+            <div class="w-full" style="user-select: auto;">
+              <h2 class="title-font font-medium text-lg text-gray-900" style="user-select: auto; background-color: red;">Physics</h2>
+              <h3 class="text-gray-500 mb-3" style="user-select: auto;">Dr Vinod Ashokan</h3>
+              <button class="btn"><a href="https://youtube.com/playlist?list=PLFrRt0z0D7aVwVuyaGX3YElKQnKdvNo3P"
+                  class="mb-4" style="user-select: auto;" target="_blank">Recorded Lectures</a></button><br>
+              <button class="btn"><a href="physics.txt" class="mb-4"
+                  style="user-select: auto;" target="_blank">Assignments  <span style = "color: red;">1</span></a></button><button class="btn"><a
+                  href="https://teams.microsoft.com/l/meetup-join/19:meeting_NGYyNTI0NWEtYTczZC00ZDQzLThiNTMtZTE4ZDdlNTVkZjIw@thread.v2/0?context=%7B%22Tid%22:%22a6de9407-2d24-407d-81e6-941b053c301a%22,%22Oid%22:%2242f99fd4-7a82-4f3b-ae88-ae76604843a5%22%7D" class="mb-4"
+                  style="user-select: auto;" target="_blank">Meet</a></button>
+              <!-- <span class="inline-flex" style="user-select: auto;">
+                    <a class="text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                  </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" style="user-select: auto;">
+          <div class="h-full flex flex-col items-center text-center" style="user-select: auto;">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="https://source.unsplash.com/203x203/?coding" style="user-select: auto;  border: 2px solid yellow;">
+            <div class="w-full" style="user-select: auto;">
+              <h2 class="title-font font-medium text-lg text-gray-900" style="user-select: auto;background-color: red;">C Programming</h2>
+              <h3 class="text-gray-500 mb-3" style="user-select: auto;">Dr Shefali Arora</h3>
+              <button class="btn"><a href="https://youtube.com/playlist?list=PLFrRt0z0D7aVBImaoRl98fI80sn4IAD4V"
+                  class="mb-4" style="user-select: auto; " target="_blank">Recorded Lectures</a></button><br>
+              <button class="btn"><a href="c programming.txt" class="mb-4"
+                  style="user-select: auto;" target="_blank">Assignments</a></button><button class="btn"><a
+                  href="https://teams.microsoft.com/l/meetup-join/19%3Ameeting_OGExN2QwODgtMTdjOS00ZjRiLTgyYzUtZWRkOGJjMjFlYzJm%40thread.v2/0?context=%7B%22Tid%22%3A%22a6de9407-2d24-407d-81e6-941b053c301a%22%2C%22Oid%22%3A%2259be6884-2546-4edf-9dba-34b2ece5ef24%22%2C%22MessageId%22%3A%220%22%7D" class="mb-4"
+                  style="user-select: auto;" target="_blank">Meet</a></button>
+              <!-- <span class="inline-flex" style="user-select: auto;">
+                    <a class="text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                  </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" style="user-select: auto;">
+          <div class="h-full flex flex-col items-center text-center" style="user-select: auto;">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="https://source.unsplash.com/202x202/?engineering"
+              style="user-select: auto; border: 2px solid yellow;">
+            <div class="w-full" style="user-select: auto;">
+              <h2 class="title-font font-medium text-lg text-gray-900" style="user-select: auto;background-color: red;">Engineering Graphics
+                and CADD</h2>
+              <h3 class="text-gray-500 mb-3" style="user-select: auto;">Dr Ashok Kumar Bagha</h3>
+              <button class="btn"><a href="https://youtube.com/playlist?list=PLFrRt0z0D7aWtDJI6nkiGq9169zn-c90y"
+                  class="mb-4" style="user-select: auto;" target="_blank">Recorded Lectures</a></button><br>
+              <button class="btn"><a href="Eg.txt" class="mb-4"
+                  style="user-select: auto;" target="_blank">Assignments  <span style = "color: red;">1</span></a></button><button class="btn"><a
+                  href="https://teams.microsoft.com/l/meetup-join/19:y-d9XEi4Qs6d65TWlzu_18Uj29l-zogNGrWxH_HSTvs1@thread.tacv2/1648873163121?context=%7B%22Tid%22:%22a6de9407-2d24-407d-81e6-941b053c301a%22,%22Oid%22:%228f0d4c70-768f-4901-ba2e-99d3a8362be2%22%7D" class="mb-4"
+                  style="user-select: auto;" target="_blank">Meet</a></button>
+              <!-- <span class="inline-flex" style="user-select: auto;">
+                    <a class="text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                  </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" style="user-select: auto;">
+          <div class="h-full flex flex-col items-center text-center" style="user-select: auto;">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="https://source.unsplash.com/203x203/?mathematics"
+              style="user-select: auto; border: 2px solid yellow;">
+            <div class="w-full" style="user-select: auto;">
+              <h2 class="title-font font-medium text-lg text-gray-900" style="user-select: auto; background-color: red;">Mathematics</h2>
+              <h3 class="text-gray-500 mb-3" style="user-select: auto;"> Dr Abhishek Kumar</h3>
+              <button class="btn"><a
+                  href="https://drive.google.com/drive/folders/1FxdNPzlkU16hzBH7mORvOSKavkfFj4Uc?usp=sharing"
+                  class="mb-4" style="user-select: auto;" target="_blank">Recorded Lectures</a></button><br>
+              <button class="btn"><a href="mathematics.txt" class="mb-4"
+                  style="user-select: auto;" target="_blank">Assignments</a></button><button class="btn"><a
+                  href="https://meet.google.com/umg-ydyc-dvi" class="mb-4"
+                  style="user-select: auto;" target="_blank">Meet</a></button>
+              <!-- <span class="inline-flex" style="user-select: auto;">
+                    <a class="text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                  </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id = "second" class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto" style="user-select: auto;">
+      <div class="flex flex-col text-center w-full mb-20" style="user-select: auto;">
+        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900" style="user-select: auto;"></h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="user-select: auto;"></p>
+      </div>
+      <div class="flex flex-wrap -m-4" style="user-select: auto;">
+        <div class="p-4 lg:w-1/4 md:w-1/2" style="user-select: auto;">
+          <div class="h-full flex flex-col items-center text-center" style="user-select: auto;">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="https://source.unsplash.com/200x200/?electronics"
+              style="user-select: auto; border:  2px solid yellow;">
+            <div class="w-full" style="user-select: auto;">
+              <h2 class="title-font font-medium text-lg text-gray-900" style="user-select: auto; background-color: red;">Basic Electronics</h2>
+              <h3 class="text-gray-500 mb-3" style="user-select: auto;">Dr Partha Pratim Shome</h3>
+              <button class="btn"><a href="https://youtube.com/playlist?list=PLFrRt0z0D7aUNuRR385jO8672rdrghoUF"
+                  class="mb-4" style="user-select: auto; " target="_blank">Recorded Lectures</a></button><br>
+              <button class="btn"><a href="basic electronics.txt" class="mb-4"
+                  style="user-select: auto;" target="_blank">Assignments</a></button><button class="btn"><a
+                  href="https://meet.google.com/jia-xbcy-tvw?authuser=0&hl=en" class="mb-4"
+                  style="user-select: auto;" target="_blank">Meet</a></button>
+              <!-- <span class="inline-flex" style="user-select: auto;">
+                    <a class="text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                  </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" style="user-select: auto;">
+          <div class="h-full flex flex-col items-center text-center" style="user-select: auto;">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="https://source.unsplash.com/201x201/?management"
+              style="user-select: auto; border:  2px solid yellow;">
+            <div class="w-full" style="user-select: auto;">
+              <h2 class="title-font font-medium text-lg text-gray-900" style="user-select: auto; background-color: red;">MPP CSE + TT</h2>
+              <h3 class="text-gray-500 mb-3" style="user-select: auto;">Dr Sukhwinder Kaur</h3>
+              <button class="btn"><a href="https://youtube.com/playlist?list=PLFrRt0z0D7aUVdGWMYpWwi2FUZmFIItgs"
+                  class="mb-4" style="user-select: auto;" target="_blank">Recorded Lectures</a></button><br>
+              <button class="btn"><a href="mpp.txt" class="mb-4"
+                  style="user-select: auto;" target="_blank">Assignments</a></button><button class="btn"><a
+                  href="https://teams.microsoft.com/l/meetup-join/19:8UvXsULn3YEX_OlIZAnTjviuQVz17SkCu84V9qDHADc1@thread.tacv2/1649007596233?context=%7B%22Tid%22:%22a6de9407-2d24-407d-81e6-941b053c301a%22,%22Oid%22:%22a19ba445-7474-44ad-9f96-3978616243f4%22%7D" class="mb-4"
+                  style="user-select: auto;" target="_blank">Meet</a></button>
+              <!-- <span class="inline-flex" style="user-select: auto;">
+                    <a class="text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                  </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" style="user-select: auto;">
+          <div class="h-full flex flex-col items-center text-center" style="user-select: auto;">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="https://source.unsplash.com/202x202/?physics" style="user-select: auto; border: 2px solid yellow;">
+            <div class="w-full" style="user-select: auto;">
+              <h2 class="title-font font-medium text-lg text-gray-900" style="user-select: auto; background-color: red;">Physics Lab</h2>
+              <h3 class="text-gray-500 mb-3" style="user-select: auto;">Dr Rohit Mehra</h3>
+              <button class="btn"><a href="https://youtube.com/playlist?list=PLFrRt0z0D7aVtNuQL3uHrWEOQBLnAZMC-"
+                  class="mb-4" style="user-select: auto; " target="_blank">Recorded Lectures</a></button><br>
+              <button class="btn"><a href="physics lab.txt" class="mb-4"
+                  style="user-select: auto;" target="_blank">Assignments <span style = "color: red;">1</span></a></button><button class="btn"><a
+                  href="https://meet.google.com/iya-pztw-jxi" class="mb-4"
+                  style="user-select: auto;" target="_blank">Meet</a></button>
+              <!-- <span class="inline-flex" style="user-select: auto;">
+                    <a class="text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                  </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2" style="user-select: auto;">
+          <div class="h-full flex flex-col items-center text-center" style="user-select: auto;">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="https://source.unsplash.com/203x203/?programming,coding"
+              style="user-select: auto; border: 2px solid yellow;">
+            <div class="w-full" style="user-select: auto;">
+              <h2 class="title-font font-medium text-lg text-gray-900" style="user-select: auto; background-color: red;">C Programming Lab</h2>
+              <h3 class="text-gray-500 mb-3" style="user-select: auto;">Dr Shefali Arora</h3>
+              <button class="btn"><a
+                  href="https://drive.google.com/drive/folders/1Fm1ZWKX-sudF-DF7ToWqHY5K60ed83-c?usp=sharing"
+                  class="mb-4" style="user-select: auto;" target="_blank">Recorded Lectures</a></button><br>
+              <button class="btn"><a href="c lab.txt" class="mb-4"
+                  style="user-select: auto;" target="_blank">Assignments</a></button><button class="btn"><a
+                  href="https://meet.google.com/dhq-rhak-kds" class="mb-4"
+                  style="user-select: auto;" target="_blank">Meet</a></button>
+              <!-- <span class="inline-flex" style="user-select: auto;">
+                    <a class="text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500" style="user-select: auto;">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" style="user-select: auto;"></path>
+                      </svg>
+                    </a>
+                  </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="TimeTable">
+    <iframe height="470dp"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUBS6YIUcJ_RUmhF_zUAjgI6P_MAJdIo5gioW31k0obBLwAOTDgy4HvEBOMEl83Iq9IUTFUOoahMF8/pubhtml?widget=true&amp;headers=false"
+      width="630dp;" style="user-select: auto;"></iframe>
+  </div>
+  <hr>
+  <section class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto" style="user-select: auto;">
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto" style="user-select: auto;">
+        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900" style="user-select: auto; color: red;">Group
+          B1-b Drive Link</h1>
+        <button
+          class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0"
+          style="user-select: auto;"><a
+            href="https://drive.google.com/drive/folders/1PCD7-bCbW54KHrfJ2LUYoMbYEa-MnH0A">Click here</a></button>
+
+      </div>
+    </div>
+  </section>
+  <hr>
+  <hr>
+  <section class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto" style="user-select: auto;">
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto" style="user-select: auto;">
+        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900" style="user-select: auto; color: red;">Physics
+          Lab Manuals</h1>
+        <button
+          class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0"
+          style="user-select: auto;"><a href="https://www.nitj.ac.in/physics/downloads.php">Click here</a></button>
+
+      </div>
+    </div>
+  </section>
+  <footer class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col" style="user-select: auto;">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" style="user-select: auto;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24" style="user-select: auto;">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" style="user-select: auto;"></path>
+        </svg>
+        <span class="ml-3 text-xl" style="user-select: auto; color: blue;">Time-Table B1-CSE</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="user-select: auto;">© 2022 NishchayVeer Productions —
+        <a href="https://instagram.com/nishchayveer" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank" style="user-select: auto;">@nishchayveer</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start" style="user-select: auto;">
+        <a class="text-gray-500" style="user-select: auto;">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" style="user-select: auto;">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" style="user-select: auto;"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" style="user-select: auto;">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" style="user-select: auto;"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" style="user-select: auto;"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" style="user-select: auto;">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" style="user-select: auto;"></path>
+            <circle cx="4" cy="4" r="2" stroke="none" style="user-select: auto;"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
